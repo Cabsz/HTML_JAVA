@@ -7,13 +7,10 @@
     <meta name="author" content="K TRUCHON">
     <title>W3 | Demo</title>
 
-    <!--in-document styling to showcase id and class power-->
     <style>
 
-        /*now we're writing in CSS code*/
         h1 {
 
-            /*border:1px solid blue;*/
             text-align:center;
             color:indigo;
 
@@ -22,14 +19,12 @@
         
         .border {
 
-            /*border is a CLASS in the HTML, called in using a . */
 
             border:1px solid black;
             margin-bottom:10px;
         }
 
         #nav {
-            /*nav is an ID in the HTML, called in using a #   */
 
             border:1px solid red;
             text-align:center;
@@ -38,7 +33,7 @@
         #wrapper {
 
             width:900px;
-            margin:auto;/*adds equal space to left and right sides, requires a width value applied*/
+            margin:auto;
         }
 
         .bg-main {
@@ -70,9 +65,7 @@
         <div id="header" class="border bg-main">
 
             <!--name of the page-->
-            <h1 id="title">SCHOOL PAGE</h1>
-            <!--h1 tags should only be used 1 time in a page-->
-
+            <h1 id="title">SCHOOLING</h1>
 
         </div><!--/ #header-->
 
@@ -80,9 +73,11 @@
         <div id="nav" class="border">
 
             <a href="index.html" class="link">HOME</a>
-            <a href="about.html" class="link">ABOUT</a>
-            <a href="schooling.html" class="link">SCHOOLS</a>
             <a href="hobbies.html" class="link">HOBBIES</a>
+            <a href="schooling.html" class="link">SCHOOLING</a>
+            <a href="about.html" class="link">ABOUT ME</a>
+            <!--external link -> goes to the page outside site-->
+            <a href="https://www.neit.edu/">VISIT NEIT</a>
 
 
         </div><!--/ #nav-->
@@ -90,7 +85,9 @@
         <!--main page content -- this usualy changes from page to page-->
         <div id="content" class="border">
 
-            <p>content of page</p>
+            <p>I am currently a student at New England Institute of Technology, or NEIT. However, when I finished high school, I initially went to Bristol Community College, or BCC. Originally it was for nursing, however the classes couldn't keep my attention and I eventually dropped out when the classes turned digital due to covid. After about 2 years of working in a hospital, I found my passion for IT when I had built my first pc back in June of 2021. After that, I started taking online certificates for IT, and eventually decided to go to NEIT, as that was the University my brother had went, and recommended it to me.</p>
+
+            <img src="images/NEIT.jpg" alt="The New England Institute of Technology Campus" width="750px">
 
 
         </div><!--/ #content-->
@@ -98,13 +95,11 @@
         <!--footer - final section of page-->
         <div id="footer" class="border bg-main">
 
-            <p>&copy; 2021, K TRUCHON | SE111.02</p>
+            <p>&copy; 2021 | SE111.02 | Calvin DaAnunciacao</p>
 
         </div><!--/ #footer-->
 
     </div><!--/ #wrapper -->
-
-
 
 </body>
 </html>

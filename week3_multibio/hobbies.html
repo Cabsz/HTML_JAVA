@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="K TRUCHON">
+    <meta name="description" content="W3 DEMO">
+    <title>W3 | DEMO</title>
+
+    <style>
+
+        body {
+            background-color: slategray;
+        }
+
+        div {
+            border:1px solid black;
+            margin:10px;
+            padding:10px;
+        }
+
+        #footer {
+
+            text-align:center;
+        }
+
+        #wrapper {
+            width:900px;
+            margin:auto;
+            background-color:rgb(135, 154, 173)
+        }
+
+        .bg-main {
+            background-color:aliceblue
+        }
+
+        a {
+            width:150px;
+            border:1px solid grey;
+            background-color: solid green;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper"><!--holds all content on page-->
+    
+        <!--HEADER-->
+        <div id="header" class="bg-main">
+
+            <h1>MY HOBBIES</h1>
+
+        </div><!--/ #header-->
+
+        <!--NAVIGATION BAR - INTERNAL LINKS-->
+        <div id="nav">
+
+            <!--internal link -> page within the site-->
+            <a href="index.html">HOME</a>
+            <a href="hobbies.html">HOBBIES</a>
+            <a href="schooling.html">SCHOOLING</a>
+            <a href="about.html">ABOUT ME</a>
+            
+
+            <!--in-page jump links -> link to a section within the current page-->
+            <a href="#footer">go to bottom</a>
+        
+        </div><!--/ #nav-->
+
+        <!--main page content -- this usualy changes from page to page-->
+        <div id="main-content">
+
+            <h2 id="hobbies">Hobbies</h2>
+            <p>I have quite a few hobbies, ranging from secluding myself and playing games, or going out for food and parks with friends. It would be too long a list so I am listing my most common ones.</p>
+            <ul>
+                <li>Soccer</li>
+                <li>Video Games</li>
+                <li>PC Building</li>
+                <li>Playing with my cat</li>
+            </ul>
+
+            <img src="images/Cat.jpg" alt="A picture of my cat sleeping on the outside furniture" width="750px">
+
+        </div><!--/ #main-content-->
+
+        <!--FOOTER--------------------------------------------------------->
+        <div id="footer" class="bg-main">
+
+            <p>&copy; 2022 | SE111.02 | Calvin DaAnunciacao</p>
+            <br>
+            <a href="#header">Back to top</a>
+
+        </div><!--/ #footer-->
+
+    </div>
+
+</body>
+</html>
