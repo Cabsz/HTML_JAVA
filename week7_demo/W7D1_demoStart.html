@@ -152,9 +152,32 @@
 
             info.innerHTML += `<br><p>HUMAN AGE: ${age}yrs\nDOG AGE: ${dog_age}yrs\nCAT AGE: ${cat_age}yrs</br></p>`
 
+
         }
 
-        
+        //global variables -- these values are accessible anywhere (inside or outside of functions)
+        var me = document.querySelector(`#me`)
+        var you = document.querySelector(`#you`)
+
+        //adding an event listener - to a non-button
+        me.addEventListener(`click`, clicked)
+
+        function clicked(e)
+        {
+            me.style.color = `red`
+            me.style.fontSize = `72px`
+            me.innerHTML = `OUCH!`
+            console.log(`clicked reached`)
+        }
+
+        var button = document.querySelector(`#submit`)
+
+        //anonymous function explain below
+        button.addEventListener(`click`, function(event){
+
+            console.log(event)
+        }//anonymous function close
+        )//addEventListener() close
 	
     
     </script>
