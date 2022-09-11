@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W6 Calculator</title>
+</head>
+<body>
+    <h1>Week 6 | Calculator</h1>
+    <script>
+
+
+        alert("Welcome to the paycheck calculator!")
+        console.log("Welcome to the paycheck calculator!")
+
+        var fname = prompt(`Hi! \nEnter your First name: `)
+        console.log(`First Name: ${fname}`)
+        alert(`Your First name is ${fname}`)
+
+        var lname = prompt(`Hi ${fname}! \nEnter your Last name: `)
+
+        console.log(`Last Name: ${lname}`)
+        alert(`Your last name is ${lname}`)
+
+
+        var num1 = prompt("Enter your hourly wage: ")
+        var num2 = prompt("Enter the number of hours worked weekly: ")
+        var num3 = prompt("Enter the tax % of hourly wage as a decimal: ")
+
+        var num4 = num1 * num2 //gross pay
+        console.log(num4)
+        var num5 = num1 * num2 * num3 //taxed amount
+        console.log(num5)
+        var num6 = num4 - num5 //net pay
+        console.log(num6)
+
+        alert(`Your total gross pay is: ${num4}`)
+        alert(`Your total net pay is: ${num6}`)
+        alert(`Your total taxed is: ${num5}`)
+
+
+    </script>
+</body>
+</html>
