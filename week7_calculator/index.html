@@ -18,22 +18,22 @@
 <!--each form element is separated by a break space (new line) -->
     <form>
         <label for="first">First Name: </label>
-        <input type="text" id="firstname">
+        <input type="text" id="firstName">
 
         <br>
 
         <label for="last">Last Name: </label>
-        <input type="text" id="lastname">
+        <input type="text" id="lastName">
 
         <br>
 
         <label for="hours">Hours Worked: </label>
-        <input type="text" id="hoursworked">
+        <input type="text" id="hoursWorked">
 
         <br>
 
         <label for="rate">Hourly Rate: </label>
-        <input type="text" id="hourlyrate">
+        <input type="text" id="hourlyRate">
 
         <br>
 
@@ -68,7 +68,7 @@
 
     <script>
         //edit the below statement to select the #enter-button id from the HTML file
-        document.querySelector().addEventListener(`click`, alertName)
+        document.querySelector().addEventListener(`#enter-button`, alertName)
         
         
 
@@ -82,24 +82,32 @@
             hours --> hours worked, #hours
             rate --> hourly rate, #rate */
             
+            var fname = document.querySelector(`#first`).value
+
+            var lname = document.querySelector(`#last`).value
+
+            var hours = document.querySelector(`#hours`).value
+
+            var rate = document.querySelector(`#rate`).value
 
 
             //console.log() all four values
             
-            console.log()
-            console.log()
-            console.log()
-            console.log()
+            console.log(`First Name: ${fname}`)
+            console.log(`Last Name: ${lname}`)
+            console.log(`Hours: ${hours}`)
+            console.log(`Rate: ${rate}`)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full 
+            var full = fname + ` ` + lname
 
             //console.log() the full name value
-            console.log()
+            console.log(`Full Name: ${full}`)
 
 
             //convert both hours and rate to Number() data types
-            
+            hours = Number(hours)
+            rate = Number(rate)
 
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
@@ -117,10 +125,10 @@
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
-
+            var info = ``
 
             //create a new var called 'num' and store the entire #check *HTML element* to it
-            
+            var num = ``
 
             //edit the innerHTML of the #info element (now the 'info' js var) to hold the value of 'finalMessage'
 
