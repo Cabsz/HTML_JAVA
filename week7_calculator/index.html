@@ -66,6 +66,7 @@
                 *success will be determined if correct info is displayed in the alert()-->
         <h3><i>If the above information is correct, please press "SUBMIT"</i></h3>
         <input type="button" id="submit" value="SUBMIT">
+        
     </form>
 
     <script>
@@ -131,7 +132,7 @@
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage = `<br><p>Hours Worked: ${hours(tofixed(2))}\nTax Amount: ${taxAmount(tofixed(2))}\nPay Rate: ${rate(tofixed(2))}</br></p>`
+            var finalMessage = `<p>Hours Worked: ${hours(tofixed(2))}<br>Tax Amount: ${taxAmount(tofixed(2))}<br>Pay Rate: ${rate(tofixed(2))}</p>`
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
@@ -144,7 +145,7 @@
             info.innerHTML  += `finalMessage`
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
-            check.innerHTML += `<br><p>Gross Pay: ${gross(tofixed(2))}\nTax Amount: ${taxAmount(tofixed(2))}\nNet Pay: ${net(tofixed(2))}</br></p>`
+            check.innerHTML += `<p>Gross Pay: ${gross(tofixed(2))}<br>Tax Amount: ${taxAmount(tofixed(2))}<br>Net Pay: ${net(tofixed(2))}</p>`
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
             //when the #submit button is clicked, the submitNow function should run
@@ -156,7 +157,9 @@
                 /*NOTE FOR TESTING:
                     *if written correctly, you will see an alert() with all info entered as well as processed!*/
 
-                alert(`${full}\nHOURS: ${hours}\nRATE: $${rate.toFixed(2)}\n\nGROSS PAY: $${gross.toFixed(2)}\nTAX AMOUNT: $${taxAmount.toFixed(2)}\nNET PAY: $${net.toFixed(2)}`)
+                alert(`Hello ${full}!<br>Hours Worked:  ${hours}<br>Rate:   $${rate.toFixed(2)}<br>Gross Pay:   $${gross.toFixed(2)}<br>Tax Amount:   $${taxAmount.toFixed(2)}<br>Net Pay:  $${net.toFixed(2)}`)
+                
+                
             }
             
         }
