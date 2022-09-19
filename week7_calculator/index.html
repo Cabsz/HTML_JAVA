@@ -118,7 +118,7 @@
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
             var gross = hours * rate
-
+            
             var taxAmount = gross * .2
             
             var net = gross - taxAmount
@@ -128,11 +128,11 @@
             alert(`Your Taxed Amount is:   $${taxAmount.toFixed(2)}`)
             alert(`Your Net Pay is:   $${net.toFixed(2)}`)
 
-            console.log(toFixed(2))
+
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage = `<p>Hours Worked: ${hours(tofixed(2))}<br>Tax Amount: ${taxAmount(tofixed(2))}<br>Pay Rate: ${rate(tofixed(2))}</p>`
+            var finalMessage = `<p>Hours Worked: ${hours.toFixed(2)}<b>Tax Amount: ${taxAmount.toFixed(2)}<b>Pay Rate: ${rate.toFixed(2)}</p>`
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
@@ -145,11 +145,11 @@
             info.innerHTML  += `finalMessage`
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
-            check.innerHTML += `<p>Gross Pay: ${gross(tofixed(2))}<br>Tax Amount: ${taxAmount(tofixed(2))}<br>Net Pay: ${net(tofixed(2))}</p>`
+            check.innerHTML += `<p>Gross Pay: ${gross.toFixed(2)}<b>Tax Amount: ${taxAmount.toFixed(2)}<b>Net Pay: ${net.toFixed(2)}</p>`
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
             //when the #submit button is clicked, the submitNow function should run
-            document.querySelector(`#submit`).addEventListener(`click`, alertName)
+            document.querySelector(`#submit`).addEventListener(`click`, submitNow)
         
             function submitNow(e)
             {
@@ -157,7 +157,12 @@
                 /*NOTE FOR TESTING:
                     *if written correctly, you will see an alert() with all info entered as well as processed!*/
 
-                alert(`Hello ${full}!<br>Hours Worked:  ${hours}<br>Rate:   $${rate.toFixed(2)}<br>Gross Pay:   $${gross.toFixed(2)}<br>Tax Amount:   $${taxAmount.toFixed(2)}<br>Net Pay:  $${net.toFixed(2)}`)
+                alert(`Hello ${full}!
+                Hours Worked:  ${hours}
+                Rate:   $${rate.toFixed(2)}
+                Gross Pay:   $${gross.toFixed(2)}
+                Tax Amount:   $${taxAmount.toFixed(2)}
+                Net Pay:  $${net.toFixed(2)}`)
                 
                 
             }
